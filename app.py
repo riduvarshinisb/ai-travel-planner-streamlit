@@ -53,7 +53,7 @@ if st.button("Generate Itinerary"):
         Provide a day-by-day itinerary with tips and cost breakdown.
         """
 
-        model = genai.GenerativeModel("gemini-1.5-flash")
+        model = genai.GenerativeModel("gemini-pro")
         response = model.generate_content(prompt)
 
         st.subheader("Your AI-Generated Itinerary")
